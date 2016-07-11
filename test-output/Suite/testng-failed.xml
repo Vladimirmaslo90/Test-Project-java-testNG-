@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="password"/>
+  <parameter name="appURL" value="https://demo.zoomdata.com:8443"/>
+  <parameter name="browserType" value="firefox"/>
+  <parameter name="username" value="zoomdata_test"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="tests.Test5">
+        <methods>
+          <include name="Task5"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="loginFlow"/>
+          <include name="Start"/>
+        </methods>
+      </class> <!-- tests.Test5 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ZoomD" parallel="tests">
+<test name="Firefox test">
+<parameter name="browserType" value="firefox"/>
+	<parameter name="appURL" value="https://demo.zoomdata.com:8443"/>
+	<parameter name="username" value="zoomdata_test"/>
+	<parameter name="password" value="password"/>
+	 <classes>
+	<class name="tests.Test1"/>
+	<class name="tests.Test2"/>
+	<class name="tests.Test3"/>
+	 </classes>
+	 </test>
+  <test name="Chrome test">
+  <parameter name="browserType" value="chrome"/>
+	<parameter name="appURL" value="https://demo.zoomdata.com:8443"/>
+	<parameter name="username" value="zoomdata_test"/>
+	<parameter name="password" value="password"/>
+	 <classes>
+	<class name="tests.Test4"/>
+	<class name="tests.Test5"/>
+	 </classes>
+	  </test> <!-- Test -->
+	  
+</suite> <!-- Suite -->
